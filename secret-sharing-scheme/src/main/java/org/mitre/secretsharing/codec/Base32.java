@@ -38,12 +38,19 @@ import org.mitre.secretsharing.util.InputValidation;
  *
  */
 public abstract class Base32 {
+	//TODO javadoc
 	public static final Pattern DIGIT = Pattern.compile("[0-9a-tv-zA-TV-Z]");
+	//TODO javadoc
 	public static final Pattern ENCODED = Pattern.compile("(D{8})*(DD(DD(D(DD)?)?)?)?".replace("D", DIGIT.pattern()));
 	
+	//TODO javadoc
 	private static final Charset ASCII = Charset.forName("ASCII");
+	//TODO javadoc
 	private static final byte[] ENCODE_SYMBOLS = "0123456789abcdefghjkmnpqrstvwxyz".getBytes(ASCII);
+	//TODO javadoc
 	private static final byte[] DECODE_SYMBOLS = new byte[256];
+
+	//TODO javadoc
 	static {
 		Arrays.fill(DECODE_SYMBOLS, (byte) -1);
 		for(int i = 0; i < ENCODE_SYMBOLS.length; i++) {
