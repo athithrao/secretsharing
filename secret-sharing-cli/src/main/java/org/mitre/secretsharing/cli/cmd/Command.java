@@ -30,18 +30,25 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
+//TODO javadoc
 public interface Command {
 
+	//TODO javadoc
 	public String getName();
 	
+	//TODO javadoc
 	public String getDescription();
 	
+	//TODO javadoc
 	public Options getOptions();
 	
+	//TODO javadoc
 	public CommandLine parse(String... args) throws ParseException;
 	
+	//TODO javadoc
 	public void perform(CommandLine cmd, InputStream in, PrintStream out, PrintStream err) throws Exception;
 	
+	//TODO javadoc
 	public void showHelp(PrintStream out);
 
 }

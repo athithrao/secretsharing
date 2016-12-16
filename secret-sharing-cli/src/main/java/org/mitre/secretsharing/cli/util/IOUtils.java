@@ -31,7 +31,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+//TODO javadoc
 public class IOUtils {
+	//TODO javadoc
 	public static byte[] toByteArray(InputStream in) throws IOException {
 		ByteArrayOutputStream bytes = new ByteArrayOutputStream();
 		byte[] buf = new byte[1024];
@@ -40,6 +42,7 @@ public class IOUtils {
 		return bytes.toByteArray();
 	}
 	
+	//TODO javadoc
 	public static List<String> readLines(InputStream in) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(in, "ASCII"));
 		List<String> lines = new ArrayList<String>();

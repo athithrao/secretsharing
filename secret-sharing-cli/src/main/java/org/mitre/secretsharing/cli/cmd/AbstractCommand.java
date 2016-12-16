@@ -36,24 +36,32 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.ParseException;
 import org.mitre.secretsharing.cli.SecretsCLI;
 
+//TODO javadoc
 public abstract class AbstractCommand implements Command {
+	//TODO javadoc
 	protected String name;
+	//TODO javadoc
 	protected String description;
 
+	//TODO javadoc
 	protected abstract List<Option> requiredArguments();
 
+	//TODO javadoc
 	public AbstractCommand(String name, String description) {
 		this.name = name;
 		this.description = description;
 	}
 
+	//TODO javadoc
 	protected String getHelpHeader() {
 		return getDescription();
 	}
+	//TODO javadoc
 	protected String getHelpFooter() {
 		return "\nversion " + SecretsCLI.version() + "\nCopyright (C) 2015 The MITRE Corporation";
 	}
 	
+	//TODO javadoc
 	protected String checkArgument(CommandLine cmd, Option o) {
 		String invalid = "";
 		if(!requiredArguments().contains(o))
@@ -69,6 +77,7 @@ public abstract class AbstractCommand implements Command {
 		return invalid;
 	}
 
+	//TODO javadoc
 	protected boolean checkArguments(CommandLine cmd, InputStream in, PrintStream out, PrintStream err) throws Exception {
 		String invalid = "";
 		List<Option> req = new ArrayList<Option>(requiredArguments());

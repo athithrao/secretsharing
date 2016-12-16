@@ -30,7 +30,9 @@ import java.util.Properties;
 import org.mitre.secretsharing.cli.cmd.Command;
 import org.mitre.secretsharing.cli.cmd.Commands;
 
+//TODO javadoc
 public class SecretsCLI {
+	//TODO javadoc
 	public static String version() {
 		Properties props = new Properties();
 		InputStream in = SecretsCLI.class.getResourceAsStream("version.properties");
@@ -43,6 +45,7 @@ public class SecretsCLI {
 		return props.getProperty("version");
 	}
 	
+	//TODO javadoc
 	public static void main(String[] args) throws Exception {
 		Command root = Commands.rootCommand();
 		root.perform(root.parse(args), System.in, System.out, System.err);

@@ -26,23 +26,29 @@ package org.mitre.secretsharing.cli.cmd;
 import java.util.ArrayList;
 import java.util.List;
 
+//TODO javadoc
 public abstract class Commands {
 
+	//TODO javadoc
 	private static final Command ROOT = new RootCommand();
+	//TODO javadoc
 	private static final Command[] SUB = new Command[] {
 		new HelpCommand(),
 		new SplitCommand(),
 		new JoinCommand(),
 	};
 
+	//TODO javadoc
 	public static Command rootCommand() {
 		return ROOT;
 	}
 
+	//TODO javadoc
 	public static Command[] subCommands() {
 		return SUB;
 	}
 
+	//TODO javadoc
 	public static List<String> names() {
 		List<String> n = new ArrayList<String>();
 		for(Command c : subCommands())
@@ -50,6 +56,7 @@ public abstract class Commands {
 		return n;
 	}
 
+	//TODO javadoc
 	public static Command forName(String name) {
 		for(Command c : subCommands())
 			if(name.equals(c.getName()))

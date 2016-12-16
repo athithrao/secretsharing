@@ -41,11 +41,16 @@ import org.mitre.secretsharing.cli.util.IOUtils;
 import org.mitre.secretsharing.codec.PartFormats;
 import org.ow2.util.base64.Base64;
 
+//TODO javadoc
 public class JoinCommand extends AbstractCommand {
+	//TODO javadoc
 	private static final Option BASE64 = new Option(null, "base-64", false, "outupt secret Base64 encoded");
+	//TODO javadoc
 	private static final Option FILE_PREFIX = new Option("p", "output-prefix", true, "prefix for storing secret parts as files");
+	//TODO javadoc
 	private static final Option FILE_SUFFIX = new Option("s", "output-suffix", true, "suffix for storing secret parts as files (requires prefix)");
 
+	//TODO javadoc
 	static {
 		FILE_PREFIX.setArgName("prefix");
 		FILE_SUFFIX.setArgName("suffix");
@@ -54,6 +59,7 @@ public class JoinCommand extends AbstractCommand {
 		FILE_SUFFIX.setArgs(1);;
 	}
 
+	//TODO javadoc
 	public JoinCommand() {
 		super("join", "joins secret parts to reconstruct a secret");
 	}

@@ -36,8 +36,10 @@ import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 
+//TODO javadoc
 public class RootCommand extends AbstractCommand {
 
+	//TODO javadoc
 	protected RootCommand() {
 		super("[command]", "");
 	}

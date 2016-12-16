@@ -32,8 +32,10 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 
+//TODO javadoc
 public class HelpCommand extends AbstractCommand {
 
+	//TODO javadoc
 	public HelpCommand() {
 		super("help", "shows help for a command");
 	}

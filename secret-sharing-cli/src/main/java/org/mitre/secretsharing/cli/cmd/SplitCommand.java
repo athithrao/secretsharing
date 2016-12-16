@@ -40,13 +40,20 @@ import org.mitre.secretsharing.cli.util.IOUtils;
 import org.mitre.secretsharing.codec.PartFormats;
 import org.ow2.util.base64.Base64;
 
+//TODO javadoc
 public class SplitCommand extends AbstractCommand {
 	
+	//TODO javadoc
 	private static final Option TOTAL = new Option("t", "total", true, "total parts to create");
+	//TODO javadoc
 	private static final Option REQUIRED = new Option("r", "required", true, "required parts");
+	//TODO javadoc
 	private static final Option BASE64 = new Option(null, "base-64", false, "secret already Base64 encoded");
+	//TODO javadoc
 	private static final Option FILE_PREFIX = new Option("p", "output-prefix", true, "prefix for storing secret parts as files");
+	//TODO javadoc
 	private static final Option FILE_SUFFIX = new Option("s", "output-suffix", true, "suffix for storing secret parts as files (requires prefix)");
+	//TODO javadoc
 	static {
 		TOTAL.setArgName("parts");
 		REQUIRED.setArgName("parts");
@@ -59,6 +66,7 @@ public class SplitCommand extends AbstractCommand {
 		FILE_SUFFIX.setArgs(1);;
 	}
 
+	//TODO javadoc
 	public SplitCommand() {
 		super("split", "splits a secret into secret parts");
 	}
