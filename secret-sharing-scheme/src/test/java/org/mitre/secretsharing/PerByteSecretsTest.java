@@ -34,9 +34,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+//TODO javadoc
 @RunWith(Parameterized.class)
 public class PerByteSecretsTest {
 
+	//TODO javadoc
 	@Parameters
 	public static Iterable<Object[]> params() {
 		List<Object[]> p = new ArrayList<Object[]>();
@@ -49,12 +51,15 @@ public class PerByteSecretsTest {
 		return p;
 	}
 
+	//TODO javadoc
 	private byte[] b;
 	
+	//TODO javadoc
 	public PerByteSecretsTest(byte[] b) {
 		this.b = b;
 	}
 	
+	//TODO javadoc
 	@Test
 	public void testSecret() {
 		PerBytePart[] parts = Secrets.splitPerByte(b, 5, 3, new Random(0L));

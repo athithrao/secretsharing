@@ -35,10 +35,13 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 import org.mitre.secretsharing.util.BigIntegers;
 
+//TODO javadoc
 @RunWith(Parameterized.class)
 public class SecretPolynomialTest {
+	//TODO javadoc
 	private static final Random rnd = new Random(0L);
 	
+	//TODO javadoc
 	@Parameters
 	public static Iterable<Object[]> params() {
 		List<Object[]> p = new ArrayList<Object[]>();
@@ -50,14 +53,18 @@ public class SecretPolynomialTest {
 		return p;
 	}
 	
+	//TODO javadoc
 	private BigInteger secret;
+	//TODO javadoc
 	private int powx;
 	
+	//TODO javadoc
 	public SecretPolynomialTest(BigInteger secret, int powx) {
 		this.secret = secret;
 		this.powx = powx;
 	}
 	
+	//TODO javadoc
 	@Test
 	public void testReconstructSecret() {
 		TermPolynomial sp = new TermPolynomial(secret, secret.bitLength(), powx, rnd);

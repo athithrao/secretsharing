@@ -27,9 +27,12 @@ import java.nio.charset.Charset;
 
 import org.junit.Test;
 
+//TODO javadoc
 public class Base32Test {
+	//TODO javadoc
 	private static final Charset ASCII = Charset.forName("ASCII");
 	
+	//TODO javadoc
 	@Test
 	public void testEncode() throws Exception {
 		byte[] enc = Base32.encode(null, "Hello World".getBytes(ASCII));
